@@ -52,7 +52,9 @@ git clone https://github.com/AyamSerundeng/lab7_php.git
 
 Jika folder `lab7_php` sudah tersedia, cukup pastikan file `index.php` berada di dalam folder tersebut.
 
-> **[SCREENSHOT 01]** Struktur folder `C:\xampp\htdocs\lab7_php` saat persiapan praktikum.
+> <img width="831" height="197" alt="Screenshot 2026-11-11 074552" src="https://github.com/user-attachments/assets/423ccca2-43cf-4df1-96af-9dce18fceaac" />
+
+Struktur folder `C:\xampp\htdocs\lab7_php` saat persiapan praktikum.
 
 ### 2. Mengaktifkan Apache
 
@@ -96,9 +98,11 @@ echo "<p>Waktu server: " . date("d-m-Y H:i:s") . "</p>";
 
 **Hasil:** Browser menampilkan teks **Belajar PHP**, **PHP berhasil dijalankan**, serta waktu server.
 
-> **[SCREENSHOT 02]** Kode awal menjalankan PHP pada `index.php`.
+> <img width="725" height="405" alt="Screenshot 2026-11-11 074657" src="https://github.com/user-attachments/assets/216c0b71-679f-46d4-bca2-d8ad6133d3d8" />
+Kode awal menjalankan PHP pada `index.php`.
 
-> **[SCREENSHOT 03]** Hasil halaman PHP di browser pada `http://localhost/lab7_php/`.
+> <img width="557" height="336" alt="Screenshot 2026-11-11 074820" src="https://github.com/user-attachments/assets/e2d8c9b2-0044-4d1e-8101-33f749e8763b" />
+Hasil halaman PHP di browser pada `http://localhost/lab7_php/`.
 
 ### 2. Variabel, Operator, dan Percabangan
 
@@ -124,9 +128,13 @@ Predikat ditentukan menggunakan `if`, `elseif`, dan `else`:
 
 **Hasil pengujian:** Nama **Siti**, nilai akhir **83,80**, dan predikat **B**.
 
-> **[SCREENSHOT 04]** Kode variabel, operator, dan percabangan nilai mahasiswa.
+> <img width="685" height="457" alt="Screenshot 2026-11-11 075309" src="https://github.com/user-attachments/assets/d8529b2b-9219-41c0-9a5e-5167d4dccc81" />
 
-> **[SCREENSHOT 05]** Tampilan hasil nilai akhir dan predikat di browser.
+Kode variabel, operator, dan percabangan nilai mahasiswa.
+
+> <img width="560" height="407" alt="Screenshot 2026-11-11 075422" src="https://github.com/user-attachments/assets/97a65244-9f28-4eae-8f8c-f072caa8eb8f" />
+
+Tampilan hasil nilai akhir dan predikat di browser.
 
 ### 3. Perulangan dan Array
 
@@ -144,13 +152,16 @@ echo "</ol>";
 
 **Hasil:** Tujuh nama mahasiswa tampil secara berurutan sebagai daftar bernomor.
 
-> **[SCREENSHOT 06]** Kode array dan perulangan `foreach`.
+> <img width="767" height="187" alt="Screenshot 2026-11-11 080259" src="https://github.com/user-attachments/assets/4007a197-2295-4c2a-bcf0-7357f6743209" />
+Kode array dan perulangan `foreach`.
 
-> **[SCREENSHOT 07]** Tampilan daftar nama mahasiswa di browser.
+> <img width="267" height="218" alt="Screenshot 2026-11-11 080315" src="https://github.com/user-attachments/assets/99b1b135-a095-4bcb-9f68-67d9b2287868" />
+
+Tampilan daftar nama mahasiswa di browser.
 
 ### 4. Membuat Function
 
-Pada bagian ini dibuat function `hitungDiskon()` untuk menghitung harga setelah diskon serta function `formatRupiah()` untuk menampilkan angka dalam format mata uang Rupiah.
+Pada bagian ini dibuat function `hitungDiskon()` untuk menghitung harga setelah diskon serta function `formatRupiah()` (hasil dari eksperimen mandiri) untuk menampilkan angka dalam format mata uang Rupiah.
 
 ```php
 function formatRupiah($angka) {
@@ -176,9 +187,13 @@ Luas = panjang × lebar
 
 **Hasil:** Harga Rp150.000 setelah diskon 10% menjadi **Rp135.000**. Persegi panjang dengan panjang 10 cm dan lebar 5 cm memiliki luas **50 cm²**.
 
-> **[SCREENSHOT 08]** Kode function diskon dan perhitungan luas persegi panjang.
+> <img width="777" height="436" alt="Screenshot 2026-11-11 080713" src="https://github.com/user-attachments/assets/f2d3f166-563c-4504-99c5-4e9aac375a05" />
 
-> **[SCREENSHOT 09]** Tampilan hasil diskon dan luas persegi panjang.
+Kode function diskon dan perhitungan luas persegi panjang.
+
+> <img width="297" height="150" alt="Screenshot 2026-11-11 080924" src="https://github.com/user-attachments/assets/cec29287-bba4-4df9-9e1a-f18ad6ecc8a6" />
+
+Tampilan hasil diskon dan luas persegi panjang.
 
 ### 5. Memproses Form dengan GET
 
@@ -200,11 +215,19 @@ http://localhost/lab7_php/?kata=Pancoran
 
 **Hasil:** Nilai pencarian dapat dibaca oleh PHP dan ditampilkan kembali di browser. Pada tahap eksperimen, form ini dikembangkan untuk mencari nama dalam array mahasiswa.
 
-> **[SCREENSHOT 10]** Kode form dan pemrosesan data menggunakan metode GET.
+> <img width="762" height="292" alt="Screenshot 2026-11-11 081518" src="https://github.com/user-attachments/assets/6bc21a49-a398-4efe-9902-98efe883629d" />
 
-> **[SCREENSHOT 11]** Tampilan URL sebelum tombol Cari ditekan.
+Kode form dan pemrosesan data menggunakan metode GET.
 
-> **[SCREENSHOT 12]** Tampilan URL dan hasil pencarian setelah form GET dikirim.
+> <img width="461" height="45" alt="Screenshot 2026-11-11 081618" src="https://github.com/user-attachments/assets/540171ff-28bc-4143-8aae-20cb26e07adb" />
+
+Tampilan URL sebelum tombol Cari ditekan.
+
+> <img width="380" height="48" alt="Screenshot 2026-11-11 081713" src="https://github.com/user-attachments/assets/75fee121-2645-4bdb-9999-3ffa775fad6f" />
+> <img width="372" height="46" alt="Screenshot 2026-11-11 081733" src="https://github.com/user-attachments/assets/1b589ad2-6d09-4902-8939-3bb17a48a488" />
+> <img width="390" height="73" alt="Screenshot 2026-11-11 081742" src="https://github.com/user-attachments/assets/e44bfeaf-5a18-475b-b5a4-bd529e8b5104" />
+
+Tampilan URL dan hasil pencarian setelah form GET dikirim.
 
 ### 6. Memproses Form dengan POST
 
@@ -218,13 +241,22 @@ Pengolahan data pada bagian ini menggunakan `trim()` untuk menghapus spasi di aw
 - **Data kosong:** Browser meminta pengguna melengkapi field dengan atribut `required`; server juga memiliki pemeriksaan input kosong.
 - **Karakter khusus/tag HTML:** Input diperlakukan sebagai teks, bukan dijalankan sebagai HTML.
 
-> **[SCREENSHOT 13]** Kode form POST dan pemrosesan data di PHP.
+> <img width="830" height="513" alt="Screenshot 2026-11-11 082313" src="https://github.com/user-attachments/assets/2f0a324a-b60f-4f1e-b61b-0b6845e168cd" />
 
-> **[SCREENSHOT 14]** Hasil form POST dengan nama dan program studi terisi.
+Kode form POST dan pemrosesan data di PHP.
 
-> **[SCREENSHOT 15]** Hasil validasi ketika salah satu field belum diisi.
+> <img width="730" height="162" alt="Screenshot 2026-11-11 082424" src="https://github.com/user-attachments/assets/6afd1cd7-9917-4e84-8876-6f0c1708ef12" />
 
-> **[SCREENSHOT 16]** Hasil pengujian input karakter khusus atau tag HTML.
+Hasil form POST dengan nama dan program studi terisi.
+
+> <img width="753" height="98" alt="Screenshot 2026-11-11 082749" src="https://github.com/user-attachments/assets/a97623af-3b7d-459e-bf86-9d91a546bc6f" />
+
+Hasil validasi ketika salah satu field belum diisi.
+
+> <img width="755" height="67" alt="Screenshot 2026-11-11 082838" src="https://github.com/user-attachments/assets/553495d4-e4d2-456c-9dc8-bad605234009" />
+> <img width="245" height="120" alt="Screenshot 2026-11-11 082848" src="https://github.com/user-attachments/assets/26cd3804-b05e-4fd7-b647-e1468dc8dd63" />
+
+Hasil pengujian input karakter khusus atau tag HTML.
 
 ### 7. Pengolahan Data Sederhana
 
@@ -248,15 +280,28 @@ Program melakukan pemeriksaan pada sisi server untuk memastikan bahwa nama baran
 
 > **Catatan:** Angka subtotal ditampilkan tanpa bagian desimal oleh `number_format()`. Format tampilan tersebut tidak berarti program mengubah harga masukan menjadi bilangan bulat sebelum perkalian.
 
-> **[SCREENSHOT 17]** Kode form barang, validasi, dan perhitungan subtotal.
+> <img width="942" height="746" alt="Screenshot 2026-11-11 083157" src="https://github.com/user-attachments/assets/3af7a55d-146b-487f-9540-9f6159cbfd54" />
 
-> **[SCREENSHOT 18]** Hasil pengolahan data dengan input lengkap.
+Kode form barang, validasi, dan perhitungan subtotal.
 
-> **[SCREENSHOT 19]** Hasil pengujian harga berbentuk desimal.
+> <img width="1015" height="45" alt="Screenshot 2026-11-11 083504" src="https://github.com/user-attachments/assets/a89c1c67-0b07-48c9-8b8b-b19506417f1a" />
+> <img width="202" height="76" alt="Screenshot 2026-11-11 083550" src="https://github.com/user-attachments/assets/f02c4188-270b-47b7-9004-05ab50740851" />
 
-> **[SCREENSHOT 20]** Hasil pengujian jumlah berbentuk desimal.
+Hasil pengolahan data dengan input lengkap.
 
-> **[SCREENSHOT 21]** Hasil validasi jumlah negatif atau data tidak sesuai.
+> <img width="975" height="52" alt="Screenshot 2026-11-11 083658" src="https://github.com/user-attachments/assets/c2938a8d-6e22-441a-bcda-e30daca42a4e" />
+> <img width="171" height="82" alt="Screenshot 2026-11-11 083716" src="https://github.com/user-attachments/assets/8e101b01-abbe-4e55-b7f3-ffcc861518f4" />
+
+Hasil pengujian harga berbentuk desimal.
+
+> <img width="966" height="40" alt="Screenshot 2026-11-11 084645" src="https://github.com/user-attachments/assets/f764347c-d915-49c7-91f2-1b3e4b3bc102" />
+> <img width="412" height="46" alt="Screenshot 2026-11-11 084730" src="https://github.com/user-attachments/assets/f2e09c9f-941b-41a7-8c92-a69aa033cced" />
+
+Hasil pengujian jumlah berbentuk desimal.
+
+>
+>
+Hasil validasi jumlah negatif atau data tidak sesuai.
 
 ---
 
