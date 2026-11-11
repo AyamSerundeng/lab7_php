@@ -294,13 +294,12 @@ Hasil pengolahan data dengan input lengkap.
 
 Hasil pengujian harga berbentuk desimal.
 
-> <img width="966" height="40" alt="Screenshot 2026-11-11 084645" src="https://github.com/user-attachments/assets/f764347c-d915-49c7-91f2-1b3e4b3bc102" />
+> <img width="962" height="50" alt="Screenshot 2026-11-11 084706" src="https://github.com/user-attachments/assets/b9bca7ca-1769-4de5-832b-9bc1e0670c95" />
 > <img width="412" height="46" alt="Screenshot 2026-11-11 084730" src="https://github.com/user-attachments/assets/f2e09c9f-941b-41a7-8c92-a69aa033cced" />
 
 Hasil pengujian jumlah berbentuk desimal.
 
->
->
+> <img width="973" height="97" alt="Screenshot 2026-11-11 084204" src="https://github.com/user-attachments/assets/5930fe45-7047-4358-9d83-75c6977894ae" />
 Hasil validasi jumlah negatif atau data tidak sesuai.
 
 ---
@@ -322,15 +321,23 @@ Mini project menerapkan konsep form POST dan validasi sisi server untuk mengolah
 
 Program juga menggunakan `htmlspecialchars()` ketika menampilkan kembali data mahasiswa agar masukan yang memiliki karakter khusus tidak ditafsirkan sebagai markup HTML.
 
-> **[SCREENSHOT 22]** Kode logika pemrosesan dan validasi data mahasiswa.
+> <img width="1163" height="741" alt="Screenshot 2026-11-11 093644" src="https://github.com/user-attachments/assets/9b959c8c-5635-4daa-83d9-1408077ce9ef" />
+Kode logika pemrosesan dan validasi data mahasiswa.
 
-> **[SCREENSHOT 23]** Kode HTML form Nama, NIM, Program Studi, Semester, dan Email.
+> <img width="938" height="802" alt="Screenshot 2026-11-11 093715" src="https://github.com/user-attachments/assets/f470dcaf-3ca9-4142-b9a6-15701bb7e2c8" />
 
-> **[SCREENSHOT 24]** Hasil form dengan data lengkap dan ringkasan mahasiswa.
+Kode HTML form Nama, NIM, Program Studi, Semester, dan Email.
 
-> **[SCREENSHOT 25]** Validasi ketika Program Studi dikosongkan.
+> <img width="322" height="635" alt="Screenshot 2026-11-11 093451" src="https://github.com/user-attachments/assets/2fdcfb26-7164-4928-8794-8777e32c34e2" />
 
-> **[SCREENSHOT 26]** Validasi ketika Email dikosongkan.
+Hasil form dengan data lengkap dan ringkasan mahasiswa.
+
+> <img width="247" height="497" alt="Screenshot 2026-11-11 094722" src="https://github.com/user-attachments/assets/2ec3beb4-678e-4694-8d24-0c922178c504" />
+
+Validasi ketika Program Studi dikosongkan.
+
+> <img width="247" height="500" alt="Screenshot 2026-11-11 095108" src="https://github.com/user-attachments/assets/f3edf4d2-2b33-4dde-b6a2-7e1b5570f5dc" />
+Validasi ketika Email dikosongkan.
 
 ---
 
@@ -350,9 +357,11 @@ Dengan nilai tugas **91**, UTS **71**, dan UAS **88**, didapatkan:
 - Nilai akhir berbobot: **83,80**.
 - Predikat: **B**.
 
-> **[SCREENSHOT 27]** Perubahan kode untuk menghitung nilai rata-rata.
+> <img width="780" height="418" alt="Screenshot 2026-11-11 105114" src="https://github.com/user-attachments/assets/623aff65-4a0c-425e-a813-59e30177a143" />
+Perubahan kode untuk menghitung nilai rata-rata.
 
-> **[SCREENSHOT 28]** Tampilan nilai rata-rata, nilai akhir, dan predikat.
+> <img width="187" height="107" alt="Screenshot 2026-11-11 105140" src="https://github.com/user-attachments/assets/b1e2d32a-c9bf-4f78-8cb6-4b6043774dfd" />
+Tampilan nilai rata-rata, nilai akhir, dan predikat.
 
 ### Eksperimen 2. Pencarian Nama Mahasiswa Menggunakan GET
 
@@ -366,9 +375,16 @@ $hasilCari = array_filter($mahasiswa, function ($mhs) use ($kata) {
 
 Pengujian pada laporan mencakup kata kunci yang ditemukan (**Doni** dan **Bima**) serta yang tidak ditemukan (**Anton** dan **Egi**). Jika tidak ada nama yang cocok, program menampilkan pesan **Nama tidak ditemukan.**
 
-> **[SCREENSHOT 29]** Kode perubahan form GET menjadi pencarian array mahasiswa.
+> <img width="1157" height="550" alt="Screenshot 2026-11-11 105845" src="https://github.com/user-attachments/assets/2a9b2275-ea7b-4a58-b100-39e463298e22" />
 
-> **[SCREENSHOT 30]** Tampilan daftar mahasiswa dan beberapa hasil pencarian nama.
+Kode perubahan form GET menjadi pencarian array mahasiswa.
+
+> <img width="380" height="447" alt="Screenshot 2026-11-11 110154" src="https://github.com/user-attachments/assets/7b322227-68f6-4471-b3fe-88338c56cb84" />
+> <img width="377" height="85" alt="Screenshot 2026-11-11 110344" src="https://github.com/user-attachments/assets/a11a081b-25c4-4c33-8166-3fd6398601ba" />
+> <img width="371" height="80" alt="Screenshot 2026-11-11 110507" src="https://github.com/user-attachments/assets/f2638125-9b21-43ef-9809-b00ea49a913b" />
+> <img width="373" height="77" alt="Screenshot 2026-11-11 110436" src="https://github.com/user-attachments/assets/0cbdd11f-3bab-40f4-b601-b27980044e96" />
+
+Tampilan daftar mahasiswa dan beberapa hasil pencarian nama.
 
 ### Eksperimen 3. Membuat Function Format Rupiah
 
@@ -382,11 +398,19 @@ function formatRupiah($angka) {
 
 Function ini diterapkan pada harga setelah diskon dan pada subtotal form barang sehingga hasil lebih mudah dibaca. Contohnya, angka `135000` ditampilkan sebagai **Rp135.000**, sedangkan `3000` menjadi **Rp3.000**.
 
-> **[SCREENSHOT 31]** Kode function `formatRupiah()`.
+> <img width="535" height="110" alt="Screenshot 2026-11-11 184607" src="https://github.com/user-attachments/assets/f5e27b7a-5759-481b-a404-0c7a9eff619d" />
 
-> **[SCREENSHOT 32]** Pemakaian `formatRupiah()` pada harga setelah diskon.
+Kode function `formatRupiah()`.
 
-> **[SCREENSHOT 33]** Pemakaian `formatRupiah()` pada hasil subtotal form barang.
+> <img width="562" height="117" alt="Screenshot 2026-11-11 184637" src="https://github.com/user-attachments/assets/5e2baa06-8041-4475-b7f0-ed321b2b3f73" />
+> <img width="232" height="40" alt="Screenshot 2026-11-11 185016" src="https://github.com/user-attachments/assets/0c02161e-f207-482d-a2da-2a4983522766" />
+
+Pemakaian `formatRupiah()` pada harga setelah diskon.
+
+> <img width="658" height="106" alt="Screenshot 2026-11-11 185231" src="https://github.com/user-attachments/assets/b3602f0c-19e3-4304-a1e6-b8d1f4ba571b" />
+> <img width="131" height="68" alt="Screenshot 2026-11-11 185024" src="https://github.com/user-attachments/assets/9d1b9a27-b82f-4051-8b7b-0be67aacbbda" />
+
+Pemakaian `formatRupiah()` pada hasil subtotal form barang.
 
 ### Eksperimen 4. Menambahkan Validasi NIM
 
@@ -402,13 +426,17 @@ if ($nimMhs === "") {
 
 **Hasil pengujian:** NIM yang berisi huruf atau lebih dari 10 digit ditolak. NIM numerik dengan panjang sesuai ketentuan dapat diproses apabila seluruh field lain valid.
 
-> **[SCREENSHOT 34]** Kode validasi NIM pada mini project.
+> <img width="658" height="106" alt="Screenshot 2026-11-11 185231" src="https://github.com/user-attachments/assets/713cb191-989f-4ad6-94c1-add1da32a569" />
+Kode validasi NIM pada mini project.
 
-> **[SCREENSHOT 35]** Pesan kesalahan saat NIM berisi karakter selain angka.
+> <img width="319" height="389" alt="Screenshot 2026-11-11 185358" src="https://github.com/user-attachments/assets/fc4d0cd5-414f-470d-948e-bbbbd52f0d83" />
+Pesan kesalahan saat NIM berisi karakter selain angka.
 
-> **[SCREENSHOT 36]** Pesan kesalahan saat NIM lebih dari 10 digit.
+> <img width="321" height="384" alt="Screenshot 2026-11-11 185419" src="https://github.com/user-attachments/assets/2d7069c6-8ded-4679-8dbd-3875491e48ec" />
+Pesan kesalahan saat NIM lebih dari 10 digit.
 
-> **[SCREENSHOT 37]** Hasil pengiriman form dengan NIM yang valid.
+> <img width="254" height="146" alt="Screenshot 2026-11-11 185529" src="https://github.com/user-attachments/assets/b1fd1e46-69e7-4fb7-98c6-4b0d2e1f1a54" />
+Hasil pengiriman form dengan NIM yang valid.
 
 ### Eksperimen 5. Menambahkan Tombol Reset
 
@@ -427,7 +455,9 @@ Tombol reset ditambahkan untuk mengembalikan isi form ke nilai awal di browser.
 | Tidak mengirim data ke PHP. | Dapat menampilkan ringkasan data atau pesan validasi. |
 | Tidak menghapus hasil server yang sudah tampil pada halaman. | Memperbarui hasil setelah request diproses. |
 
-> **[SCREENSHOT 38]** Tampilan tombol Reset Form pada mini project dan hasil penggunaannya.
+> <img width="707" height="44" alt="Screenshot 2026-11-11 185748" src="https://github.com/user-attachments/assets/e5e53c7a-d9dd-4f5a-bc36-38fb3b128adb" />
+> <img width="249" height="40" alt="Screenshot 2026-11-11 190043" src="https://github.com/user-attachments/assets/ec35507b-c998-4f32-b52f-370c7a91aa90" />
+
 
 ---
 
