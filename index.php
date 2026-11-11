@@ -16,6 +16,8 @@
         $uts = 71;
         $uas = 88;
         $nilaiAkhir = ($tugas * 0.30) + ($uts * 0.30) + ($uas * 0.40);
+        $rataRata = ($tugas + $uts + $uas) / 3;
+
         if ($nilaiAkhir >= 85) {
             $predikat = "A";
         } elseif ($nilaiAkhir >= 75) {
@@ -26,6 +28,7 @@
             $predikat = "D";
         }
         echo "Nama: " . htmlspecialchars($nama) . "<br>";
+        echo "Nilai rata-rata: " . number_format($rataRata, 2) . "<br>";
         echo "Nilai akhir: " . number_format($nilaiAkhir, 2) . "<br>";
         echo "Predikat: " . $predikat;
         ?>
@@ -38,14 +41,20 @@
         }
         echo "</ol>";
         ?>
+
+        <?php
+        function formatRupiah($angka) {
+            return "Rp" . number_format($angka, 0, ",", ".");
+        }
+        ?>
         
         <?php
         function hitungDiskon($harga, $persen) {
             $potongan = $harga * ($persen / 100);
             return $harga - $potongan;
-            }
+        }
         $hargaAkhir = hitungDiskon(150000, 10);
-        echo "Harga setelah diskon: Rp" . number_format($hargaAkhir, 0, ",", ".");
+        echo "Harga setelah diskon: " . formatRupiah($hargaAkhir);
         echo "<br><br>";
         ?>
         
@@ -68,10 +77,20 @@
         <?php
         if (isset($_GET["kata"])) {
             $kata = trim($_GET["kata"]);
-            echo "Kata kunci: " . htmlspecialchars($kata, ENT_QUOTES, "UTF-8");
+            echo "Kata kunci: " . htmlspecialchars($kata, ENT_QUOTES, "UTF-8") . "<br>";
+            if ($kata !== "") {
+                $hasilCari = array_filter($mahasiswa, function($mhs) use ($kata) {
+                    return stripos($mhs, $kata) !== false;
+                });
+                if (!empty($hasilCari)) {
+                    echo "Hasil pencarian: " . htmlspecialchars(implode(", ", $hasilCari), ENT_QUOTES, "UTF-8");
+                } else {
+                    echo "Nama tidak ditemukan.";
+                }
             }
-            echo "<br><br>";
-            ?>
+        }
+        echo "<br><br>";
+        ?>
         
         <!-- index.php -->
         <form method="POST" action="">
@@ -124,7 +143,7 @@
             echo "<p>" . htmlspecialchars($error) . "</p>";
             } elseif (isset($subtotal)) {
             echo "<p>Barang: " . htmlspecialchars($barang) . "</p>";
-            echo "<p>Subtotal: Rp" . number_format($subtotal, 0, ",", ".") . "</p>";
+            echo "<p>Subtotal: " . formatRupiah($subtotal) . "</p>";
             }
         ?>
 
@@ -141,7 +160,11 @@
             $emailMhs = trim($_POST["email"] ?? "");
 
             if ($namaMhs === "") $errorMhs[] = "Nama wajib diisi.";
-            if ($nimMhs === "") $errorMhs[] = "NIM wajib diisi.";
+            if ($nimMhs === "") {
+                $errorMhs[] = "NIM wajib diisi.";
+            } elseif (!ctype_digit($nimMhs) || strlen($nimMhs) > 10) {
+                $errorMhs[] = "NIM harus berupa angka dan maksimal 10 digit.";
+            }
             if ($prodiMhs === "") $errorMhs[] = "Program studi wajib diisi.";
             if ($emailMhs === "") {
                 $errorMhs[] = "Email wajib diisi.";
@@ -183,6 +206,7 @@
             </p>
             <p>
                 <button type="submit" name="kirim_mhs">Kirim Data Mahasiswa</button>
+                <button type="reset">Reset Form</button>
             </p>
         </form>
 
